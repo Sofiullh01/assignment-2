@@ -283,9 +283,6 @@ footer{
     flex-wrap: wrap;
     margin-bottom: 20px;
 }
-.first-text-icon .fa-brands{
-    color: white;
-}
 .footer-img{
     display: flex;
     align-items: center;
@@ -301,22 +298,64 @@ footer{
     align-items: center;
     gap: 40px;
     margin-bottom: 30px;
-    color: white;
+    color: rgba(255, 255, 255, 0.84);
 }
 .first-text2{
     display: flex;
     align-items: center;
     gap: 40px;
     margin-bottom: 30px;
-    color: white;
+    color: rgba(255, 255, 255, 0.60);
 }
 .footer-last{
     font-size: 14px;
     font-weight: 400;
-    color: white;
+    color: rgba(255, 255, 255, 0.60);
     text-align: center;
 
 }
+.first-text-icon button{
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+.first-text-icon button p .fa-brands{
+    font-size: 30px;
+    background: none;
+}
+
+
+
+@media screen and (max-width: 769px) {
+    nav, .menu-container ul{
+        flex-direction: column;
+    }
+    .logo-container{
+        margin-bottom: 30px
+    }
+    .online-image{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .play{
+        flex-direction: column;
+    }
+    .short-img  > img{
+        width:30vw ;
+        height: 45vh;
+    }
+    .short-img2  > img{
+        width:30vw ;
+        height: 45vh;
+    }
+    
+}   
+
+
+
+
+
+
 
 
 
@@ -436,6 +475,11 @@ footer{
     .first-text2{
         display: grid;
         grid-template-columns: repeat(2,1fr);
+    }
+    .play-text{
+        text-align: center;
+        padding: 80%;
+        margin-bottom: 50px;
     }
 
 }
