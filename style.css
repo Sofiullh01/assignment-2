@@ -258,6 +258,7 @@ nav{
     font-size: 13px;
     cursor: pointer;
     transition: border 0.5s;
+    border: 1px solid transparent;
 }
 .card:hover{
     border: 2px solid rgba(216, 112, 147, 0.694);
